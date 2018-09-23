@@ -11,6 +11,7 @@ import (
 // Helper function to pull the href attribute from a Token
 func getHref(t html.Token) (ok bool, href string) {
 	for _, a := range t.Attr {
+
 		if a.Key == "href" {
 			href = a.Val
 			ok = true
